@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Linea 2 metro CDMX </title>
+    <title> Metro CDMX Linea 2 </title>
     <style>
         * {
             margin: 0;
@@ -13,8 +13,8 @@
         }
         
         body {
-            background: linear-gradient(135deg, #3AC1E1 0%, #ffffff 100%);
-            color: white;
+            background: linear-gradient(135deg, #0070BC 0%, #333232 100%);
+            color: rgb(0, 0, 0);
             min-height: 100vh;
             padding: 20px;
             display: flex;
@@ -40,19 +40,19 @@
         h1 {
             font-size: 2.8rem;
             margin-bottom: 10px;
-            color: #ffffff;
+            color: #000000;
             text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
         }
         
         h2 {
             font-size: 1.5rem;
-            color: #030011;
+            color: #000000;
             margin-bottom: 5px;
         }
         
         .subtitle {
             font-size: 1.2rem;
-            color: #fcfcfc;
+            color: #ffffff;
             max-width: 800px;
             line-height: 1.5;
         }
@@ -64,7 +64,7 @@
             width: 100%;
             max-width: 800px;
             text-align: center;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 10px 30px #0070Bc (0, 0, 0, 0.3);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
@@ -90,12 +90,12 @@
             height: 300px;
             border-radius: 15px;
             background-color: rgba(0, 0, 0, 0.3);
-            border: 3px dashed #65646A;
+            border: 3px dashed #0070BC;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            color: #ffde59;
+            color: #565656;
             font-size: 1.2rem;
         }
         
@@ -120,15 +120,15 @@
             transform: translate(-50%, -50%);
             width: 70%;
             height: 40%;
-            border: 3px solid #3AC1E1;
+            border: 3px solid #0070BC;
             border-radius: 10px;
             animation: pulse-frame 2s infinite;
         }
         
         @keyframes pulse-frame {
-            0% { box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.7); }
-            70% { box-shadow: 0 0 0 15px rgba(76, 175, 80, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(76, 175, 80, 0); }
+            0% { box-shadow: 0 0 0 0 #0070BC (76, 175, 80, 0.7); }
+            70% { box-shadow: 0 0 0 15px (1, 118, 252, 0.575); }
+            100% { box-shadow: 0 0 0 0 rgba(6, 176, 228, 0); }
         }
         
         .camera-controls {
@@ -140,8 +140,8 @@
         }
         
         .camera-button {
-            background: linear-gradient(to right, #3AC1E1, #2dcff3);
-            color: #ffffff;
+            background: linear-gradient(to right, #0070BC, #0868BA);
+            color: #000000;
             border: none;
             padding: 12px 30px;
             font-size: 1rem;
@@ -157,7 +157,7 @@
         }
         
         .camera-button:hover {
-            background: linear-gradient(to right, #ffcc00, #e6b800);
+            background: linear-gradient(to right, #0070BC , #0868BA);
             transform: scale(1.05);
         }
         
@@ -166,7 +166,7 @@
         }
         
         .camera-button:disabled {
-            background: #3AC1E1;
+            background: #666;
             cursor: not-allowed;
             transform: none;
         }
@@ -191,7 +191,7 @@
             margin-top: 20px;
             padding: 15px;
             border-radius: 10px;
-            background-color: rgba(255, 255, 255, 0.1);
+            background-color: rgba(0, 0, 0, 0.1);
             font-size: 1rem;
             min-height: 50px;
             display: flex;
@@ -206,13 +206,13 @@
         }
         
         .status-error {
-            background-color: rgba(244, 67, 54, 0.2);
+            background-color: rgba(255, 43, 28, 0.2);
             color: #ef9a9a;
         }
         
         .status-scanning {
             background-color: rgba(33, 150, 243, 0.2);
-            color: #90caf9;
+            color: #0070BC ;
         }
         
         .map-section {
@@ -239,7 +239,7 @@
         }
         
         .map-title {
-            color: #65646A;
+            color: #0a0a0a;
             text-align: center;
             margin-bottom: 20px;
             font-size: 2rem;
@@ -252,7 +252,7 @@
         }
         
         .instructions {
-            background-color: rgba(59, 58, 58, 0.1);
+            background-color: #565656(0, 0, 0, 0.1);
             border-radius: 15px;
             padding: 25px;
             margin-top: 30px;
@@ -262,7 +262,7 @@
         }
         
         .instructions h3 {
-            color: #ffde59;
+            color: #000000;
             margin-bottom: 15px;
             font-size: 1.5rem;
         }
@@ -270,7 +270,7 @@
         .instructions p {
             line-height: 1.6;
             margin-bottom: 15px;
-            color: #e6e6e6;
+            color: #000000;
         }
         
         .step {
@@ -285,8 +285,8 @@
         }
         
         .step-number {
-            background-color: #3AC1E1;
-            color: #ffffff;
+            background-color: #0070BC;
+            color:#f8f5f5;
             width: 30px;
             height: 30px;
             border-radius: 50%;
@@ -297,9 +297,9 @@
         }
         
         .back-button {
-            background-color: rgba(255, 255, 255, 0.1);
-            color: white;
-            border: 1px solid (255, 255, 255, 0.3);
+            background-color: #0070BC (255, 255, 255, 0.1);
+            color: #0868BA;
+            border: 1px solid rgba(13, 2, 61, 0.705);
             padding: 12px 30px;
             font-size: 1rem;
             border-radius: 50px;
@@ -313,13 +313,13 @@
         }
         
         .compatibility-notice {
-            background-color: rgba(255, 193, 7, 0.2);
-            border-left: 4px solid #ffc107;
+            background-color: rgba(255, 255, 255, 0.541);
+            border-left: 4px solid #0070BC;
             padding: 12px;
             border-radius: 5px;
             margin-top: 25px;
             font-size: 0.9rem;
-            color: #ffecb3;
+            color: #000000b2;
             width: 100%;
         }
         
@@ -339,14 +339,14 @@
         }
         
         .qr-instructions h4 {
-            color: #ffde59;
+            color: #000000;
             margin-bottom: 10px;
         }
         
         footer {
             margin-top: 40px;
             text-align: center;
-            color: rgba(255, 255, 255, 0.6);
+            color: rgba(0, 0, 0, 0.692);
             font-size: 0.9rem;
             padding: 20px;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -388,13 +388,13 @@
 <body>
     <div class="container">
         <header>
-            <h1> Linea 2  metro CDMX</h1>
-            <p class="subtitle"> escanea tu tarjeta del metro</p>
+            <h1> Información Del Metro Linea 2 </h1>
+            <p class="subtitle"> Escanea Tu Tarjeta de Movilidad CDMX</p>
         </header>
         
         <section class="scan-section">
-            <h2>Escanear Tarjeta del Metro CDMX</h2>
-            <p>Usa la cámara de tu dispositivo para escanear el código QR de tu tarjeta</p>
+            <h2>Escanear Tarjeta De Movilidad CDMX</h2>
+            <p>Usa la cámara de tu dispositivo para escanear tu tarjeta</p>
             
             <div class="camera-container">
                 <div class="camera-placeholder" id="cameraPlaceholder">
@@ -420,7 +420,7 @@
             </div>
             
             <div class="status-message" id="statusMessage">
-                Activa la cámara y enfoca el código QR de tu tarjeta del Metro CDMX
+                Activa la cámara y enfoca el código QR de tu tarjeta Movilidad CDMX
             </div>
             
             <div class="qr-instructions">
@@ -439,17 +439,17 @@
         
         <section class="map-section" id="mapSection">
             <div class="map-container">
-                <h2 class="map-title">Mapa de la Linea 2 de la Ciudad de México</h2>
-                <img src="assets/linea2.jpg" alt="Mapa del Cablebus Linea 1 CDMX CDMX" class="map-image" id="mapImage">
+                <h2 class="map-title"> Información De la Linea 2 </h2>
+                <img src="assets/linea2.jpg" alt="Mapa del Metro Linea 2 CDMX" class="map-image" id="mapImage">
             </div>
             
             <div class="instructions">
-                <h3> Información de la Linea 2 metro CDMX  </h3>
-                <p> La Línea 2 del Sistema de Transporte Colectivo (STC) Metro de la Ciudad de México, identificada con el color azul, es una de las arterias principales de la red, conectando de norte a sur importantes zonas de la capital y parte del Estado de México. <p>
+                <h3>Información Del  Linea 2 </h3>
+                <p> La Línea 2 del Sistema de Transporte Colectivo (STC) Metro de la Ciudad de México, identificada con el color azul, es una de las arterias principales de la red, conectando de norte a sur importantes zonas de la capital y parte del Estado de México. </p>
                 
                 <div class="step">
                     <div class="step-number">1</div>
-                    <div> Estación Terminal: Cuatro Caminos </div>
+                    <div>Estación Terminal: Cuatro Caminos </div>
                 </div>
                 
                 <div class="step">
@@ -457,8 +457,17 @@
                     <div> Estación Terminal:  Tasqueña </div>
                 </div>
                 
-                <p>El horario de servicio es de 5:00 A 23:00 HRS, 6:00 A 23:00 HRS, 7:00 A 23:00 HRS entre semana</p>
+                <p> lunes a viernes: de 5:00 a 00:00 hrs
+                    Sábado: de 6:00 a 00:00 hrs
+                    Domingo: de 7:00 a 00:00 hrs
+                    El último tren sale de cada terminal a las 23:30 </p>
                 
+                <div class="step" id="cardInfo" style="display: none;">
+                    <div class="step-number">ℹ</div>
+                    <div id="cardData">Información de la tarjeta escaneada aparecerá aquí</div>
+                </div>
+            </div>
+            
             <button class="back-button" id="backButton">Regresar al Escáner</button>
         </section>
         
@@ -686,14 +695,8 @@
                 trips: "8"
             };
             
-            cardInfo.style.display = "flex";
-            cardData.innerHTML = `
-                <div><strong>Tarjeta:</strong> ${demoData.cardType}</div>
-                <div><strong>UID:</strong> ${demoData.cardUID}</div>
-                <div><strong>Saldo:</strong> $${demoData.balance} MXN</div>
-                <div><strong>Último uso:</strong> ${demoData.lastUse}</div>
-                <div><strong>Viajes este mes:</strong> ${demoData.trips}</div>
-            `;
+
+            ;
             
             statusMessage.textContent = "✓ Modo demostración activado - Tarjeta simulada escaneada";
             statusMessage.className = "status-message status-success";
@@ -739,7 +742,7 @@
                 }
             });
         });
+        
     </script>
 </body>
 </html>
-
